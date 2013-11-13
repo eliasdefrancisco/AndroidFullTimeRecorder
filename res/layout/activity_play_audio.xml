@@ -1,0 +1,249 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/ly01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoMainList"
+    android:orientation="vertical"
+    tools:context=".PlayAudio" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/LyAudioList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/backgroung_list_item"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tTittlePlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Calle Guadalquivir, 6"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text04"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tHourPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tTittlePlay"
+                    android:text="12:59"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text03"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tDatePlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tHourPlay"
+                    android:layout_alignBottom="@+id/tHourPlay"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tHourPlay"
+                    android:text="Jueves, 7 Noviembre 2013"
+                    android:textColor="@color/text02" />
+
+                <TextView
+                    android:id="@+id/tNumAudiosPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tHourPlay"
+                    android:text="59"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text03"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tLabelAudiosPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tNumAudiosPlay"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tNumAudiosPlay"
+                    android:text="@string/segundos"
+                    android:textColor="@color/text02" />
+
+                <TextView
+                    android:id="@+id/tCompleteAddressPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tNumAudiosPlay"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:text="Calle Guadalquivir, 6 | 11406 Jerez de la Frontera | Cádiz | España"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text01"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+            
+            <LinearLayout
+                android:id="@+id/lyDrawGraph"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_item"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seekBar01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/lBotonera01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/bPlay01"
+                    style="?android:attr/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/fondoMainList"
+                    android:drawableTop="@android:drawable/ic_media_play"
+                    android:onClick="mPlayerPlay"
+                    android:text="Play"
+                    android:textColor="@color/text04" />
+
+                <Button
+                    android:id="@+id/bPause"
+                    style="?android:attr/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/fondoMainList"
+                    android:drawableTop="@android:drawable/ic_media_pause"
+                    android:onClick="mPlayerPause"
+                    android:text="Pause"
+                    android:textColor="@color/text04" />
+
+                <ToggleButton
+                    android:id="@+id/tbMark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/fondoMainList"
+                    android:drawableTop="@android:drawable/btn_star_big_off"
+                    android:onClick="onClickMark"
+                    android:text="@string/prescindible"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text04"
+                    android:textOff="@string/prescindible"
+                    android:textOn="@string/importante" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tComentario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/button"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Introduzca Comentario"
+                android:inputType="textMultiLine"
+                android:minLines="4"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmallInverse"
+                android:textColor="@color/text04"
+                android:textColorHint="@color/text03" >
+
+                <requestFocus />
+            </EditText>
+
+            <LinearLayout
+                android:id="@+id/lBotonera02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/bPrevio"
+                    style="?android:attr/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/fondoMainList"
+                    android:drawableTop="@android:drawable/ic_media_previous"
+                    android:onClick="onClickPrev"
+                    android:text="Prev"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text04" />
+
+                <Button
+                    android:id="@+id/bBorrar"
+                    style="?android:attr/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:background="@color/fondoMainList"
+                    android:drawableTop="@android:drawable/ic_menu_delete"
+                    android:onClick="onClickDel"
+                    android:text="Del"
+                    android:textColor="@color/text04" />
+
+                <Button
+                    android:id="@+id/bShare"
+                    style="?android:attr/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:background="@color/fondoMainList"
+                    android:drawableTop="@android:drawable/ic_menu_share"
+                    android:onClick="onClickShare"
+                    android:text="Share"
+                    android:textColor="@color/text04" />
+
+                <Button
+                    android:id="@+id/bSiguiente"
+                    style="?android:attr/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/fondoMainList"
+                    android:drawableTop="@android:drawable/ic_media_next"
+                    android:onClick="onClickNext"
+                    android:text="Next"
+                    android:textColor="@color/text04" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1231412854165194/4173967219"
+        ads:loadAdOnCreate="true" />
+    
+</LinearLayout>

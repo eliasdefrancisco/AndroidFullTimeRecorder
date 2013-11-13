@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android Full Time Recorder</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_audio_list">AudioList</string>
+    <string name="title_activity_play_audio">PlayAudio</string>
+    <string name="title_activity_map_view">MapView</string>
+    <string name="title_activity_about">About</string>
+    
+    <string name="monitor_on">Monitorizando Audio</string>
+    <string name="grabacion_activa">Grabación de audio activa</string>
+    <string name="grabaciones">Grabaciones</string>
+    <string name="iniciar_grabadora">Iniciar Grabadora</string>
+	<string name="actualizar_lista">Actualizar Lista</string>
+	<string name="segundos">Segundos</string>
+	<string name="prescindible">Prescindible</string>
+	<string name="importante">Importante</string>
+	<string name="ver_grabaciones">Ver Grabaciones</string>
+	<string name="ver_mapa">Ver Mapa</string>
+	<string name="configuracion">Configuración</string>
+	<string name="acercade">Acerca de...</string>
+	<string name="bajo">Bajo</string>
+	<string name="normal">Normal</string>
+	<string name="alto">Alto</string>
+	<string name="un_dia">1 día</string>
+	<string name="tres_dias">3 días</string>
+	<string name="siete_dias">7 días</string>
+	<string name="ajuste_el_nivel">Ajuste el nivel mínimo de sonido con que se almacenarán las grabaciones</string>
+	<string name="ajuste_el_tiempo">Ajuste el tiempo que las grabaciones quedarán guardas si no se marcaron como Importantes</string>
+	<string name="tiempo_autolimpieza">Tiempo Autolimpieza</string>
+	<string name="nivel_sonido">Nivel de sonido</string>
+	<string name="introduzca_comentario">Introduzca un comentario</string>
+	<string name="nada_grabado">No se ha grabado nada, aun no hay datos para mostrar</string>
+</resources>

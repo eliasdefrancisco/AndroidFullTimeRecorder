@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout03"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_item"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgCassette"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/tAudioDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:text="165"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/text04" />
+
+        <TextView
+            android:id="@+id/tLabelDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:paddingBottom="3dp"
+            android:text="@string/segundos"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/text04" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tAudioHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="16:40"
+        android:textColor="@color/text04"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgCassette"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tAudioHour"
+        android:onClick="onClickCassette"
+        android:padding="1dp"
+        android:src="@drawable/cassette" />
+
+</RelativeLayout>

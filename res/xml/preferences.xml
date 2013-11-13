@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="main_preferences"
+    android:title="Configuración General" >
+
+    <ListPreference
+        android:defaultValue="500"
+        android:summary="@string/ajuste_el_nivel"
+        android:title="@string/nivel_sonido"
+        android:entries="@array/NoiseLevel"
+        android:entryValues="@array/NoiseLevelValue"
+        android:key="NoiseLevel" />
+    <ListPreference
+        android:summary="@string/ajuste_el_tiempo"
+        android:title="@string/tiempo_autolimpieza"
+        android:entries="@array/OutOfDate"
+        android:entryValues="@array/OutOfDateValue"
+        android:key="OutOfDate" 
+        android:defaultValue="259200"/>
+
+</PreferenceScreen>

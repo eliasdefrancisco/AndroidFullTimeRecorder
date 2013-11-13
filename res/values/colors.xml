@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fondoMainList">#BBBBDD</color>
+    <color name="fondoMainItem">#FFFFFF</color>
+    <color name="textoMapa">#000099</color>
+    <color name="borderListItem">#8080FF</color>
+    <color name="fondoBoton">#EEEEEE</color>
+    <color name="fondoBotonItem">#EEEEFF</color>
+    <color name="text01">#BBBBDD</color>
+    <color name="text02">#AAAABB</color>
+    <color name="text03">#9999AA</color>
+    <color name="text04">#666699</color>
+    
+</resources>
