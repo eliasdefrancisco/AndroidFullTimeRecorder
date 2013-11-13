@@ -32,7 +32,10 @@
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBUJAyKxFo2ByCYsOzBEm60psmxsyeVyKY" />
+            android:value="AIzaSyCPL-_OombNNif7O-xHjN7YafVQBvZq8jE"
+        />
+<!--             "AIzaSyBUJAyKxFo2ByCYsOzBEm60psmxsyeVyKY"  DEBUG -->
+            
 
         <activity
             android:name="com.arcadexxi.androidfulltimerecorder.MainActivity"

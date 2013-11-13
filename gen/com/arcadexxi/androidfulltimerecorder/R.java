@@ -404,6 +404,7 @@ containing a value of this type.
         public static final int grabaciones=0x7f090022;
         public static final int hello_world=0x7f09001b;
         public static final int importante=0x7f090027;
+        public static final int imposible_averiguar=0x7f090038;
         public static final int iniciar_grabadora=0x7f090023;
         public static final int introduzca_comentario=0x7f090036;
         public static final int monitor_on=0x7f090020;

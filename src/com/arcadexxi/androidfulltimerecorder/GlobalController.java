@@ -75,7 +75,7 @@ public class GlobalController {
 			
 		} catch (IOException e) {
 			e.printStackTrace();
-			address.add("Imposible averiguar dirección");
+			address.add(ParentContext.getResources().getString(R.string.imposible_averiguar));
 			address.add("Lat: " + locationPoint.getLatitude());
 			address.add("Lon: " + locationPoint.getLongitude());
 		}

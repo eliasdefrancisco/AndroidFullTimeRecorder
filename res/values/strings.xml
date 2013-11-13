@@ -33,4 +33,5 @@
 	<string name="nivel_sonido">Sound level</string>
 	<string name="introduzca_comentario">Comment this file</string>
 	<string name="nada_grabado">No audio files, any data to show</string>
+	<string name="imposible_averiguar">Unable to find address</string>
 </resources>

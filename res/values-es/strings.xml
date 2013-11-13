@@ -32,4 +32,5 @@
 	<string name="nivel_sonido">Nivel de sonido</string>
 	<string name="introduzca_comentario">Introduzca un comentario</string>
 	<string name="nada_grabado">No se ha grabado nada, aun no hay datos para mostrar</string>
+	<string name="imposible_averiguar">Imposible averiguar dirección</string>
 </resources>
